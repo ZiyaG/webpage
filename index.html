@@ -33,6 +33,77 @@ img[class="img1"] { width: 100% !important; height: auto !important; }
 td[class="hide"] { max-height: 0px !important; height: 0px !important; }
 *[class="contact-button"] { border-top: 0px !important; }
 }
+
+/* Interface */
+.bold-text {
+  font-weight: bold;
+}
+.xl-text {
+  font-size: 30px;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+/* Helper */
+.content-center {
+  margin: 0 auto;
+}
+.text-center {
+  text-align: center;
+}
+
+/* Header */
+
+.header-img__container {
+  position: relative;
+  display: inline-block;
+}
+.header-img {
+  max-width: 100%;
+  height: auto;
+}
+.header-img-text {
+  font-family: 'Open sans', Arial, sans-serif;
+  font-size: 14px;
+  color: white;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+.header-img-text-title {
+  max-width: 540px;
+  letter-spacing: 4px;
+  text-align: center;
+
+  margin-top: 90px;
+  margin-bottom: 25px;
+}
+@media (max-width: 620px) {
+  .header-img-text-title {
+    margin-top: 70px;
+    max-width: 459px;
+  }
+}
+@media (max-width: 550px) {
+  .header-img-text-title {
+    margin-top: 40px;
+    max-width: 377px;
+  }
+}
+@media (max-width: 510px) {
+  .header-img {
+    height: 270px;
+  }
+}
+.yellow-bar-sm {
+  width: 40px;
+  height: 5px;
+  background-color: #D4AF37;
+  border-radius: 10px;
+}
+
 </style>
 </head>
 
@@ -42,90 +113,22 @@ td[class="hide"] { max-height: 0px !important; height: 0px !important; }
     <img style="display: inline-block; width: 220px; height: 120px;" src="images/logo.png" alt="img" />
   </div>
   <!--end header bar-->
+
   <!--header-->
-  <table bgcolor="#FFFFFF" width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
-    <tr>
-      <td align="center" background="images/header-bg.png" bgcolor="#414a51" style="background-size:cover; background-position:top;">
-        <table align="center" border="0" cellpadding="0" cellspacing="0">
-          <tr>
-            <td width="600" align="center">
-              <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" class="table-inner">
-                <tr>
-                  <td height="90"></td>
-                </tr>
-                <!--Headline-->
-                <tr>
-                  <td align="center" style="text-decoration: none; color:#FFFFFF;font-family: 'Century Gothic', Arial, sans-serif;  font-size:30px; font-weight: bold;letter-spacing: 4px;">Elegant Luxury Above The Village</td>
-                </tr>
-                <!--end Headline-->
-                <tr>
-                  <td height="25"></td>
-                </tr>
-                <!-- dash -->
-                <tr>
-                  <td align="center">
-                    <table bgcolor="#D4AF37" style="border-radius:10px;" width="40" border="0" align="center" cellpadding="0" cellspacing="0">
-                      <tr>
-                        <td height="5"></td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <!-- end dash -->
-                <tr>
-                  <td height="15"></td>
-                </tr>
-                <!--sub headline-->
-                <tr>
-                  <td align="center" style="font-family: 'Open sans', Arial, sans-serif; color:#FFFFFF; font-size:14px;line-height: 28px;">
-                    2 Bedroom from 490K
-                  </td> 
-                </tr>
-                <tr>
-                  <td align="center" style="font-family: 'Open sans', Arial, sans-serif; color:#FFFFFF; font-size:14px;line-height: 28px;">
-                    1 Bedroom from 390K
-                  </td> 
-                </tr>
-                <!--end sub headline-->
-                <tr>
-                  <td height="80"></td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-        </table>
-        <!--button-->
-        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
-          <tr>
-            <td height="50" align="center" background="images/title-bg.png" style="background-image: url(images/title-bg.png); background-repeat: repeat-x; background-size: auto; background-position: bottom;">
-              <table align="center" border="0" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td width="600" align="center">
-                    <table width="100%" class="table-inner" border="0" align="center" cellpadding="0" cellspacing="0">
-                      <tr>
-                        <td align="center">
-                          <table style="border-radius:50px;" class="table-inner" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#c86e6e">
-                            <tr>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-        </table>
-        <!--end button-->
-      </td>
-    </tr>
-    <tr>
-      <td height="25"></td>
-    </tr>
-  </table>
+  <div class="header-img__container-outter text-center bg-black">
+    <div class="header-img__container">
+      <img class="header-img" src="images/header-bg.png">
+      <div class="header-img-text">
+        <p class="header-img-text-title xl-text bold-text content-center">Elegant Luxury Above The Village</p>
+        <div class="yellow-bar-sm content-center"></div>
+        <p>2 Bedroom from 490K</p>
+        <p>1 Bedroom from 390K</p>
+      </div>
+      
+    </div>
+  </div>
   <!--end header-->
+
   <!-- 3/3 content -->
   <table bgcolor="#FFFFFF" align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
     <tr>
