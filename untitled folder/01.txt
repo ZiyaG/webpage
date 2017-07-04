@@ -1,0 +1,34 @@
+1. deleted btn-link 174-175
+
+2. 
+session grey outline 408
+envato meetup 452
+red decorative line 459
+text 469-470
+register now 482-484
+or more detail 485-487
+red spot 477-484
+image 428
+
+
+97x19
+
+blue
+b0cdef
+
+original grey
+e0e5eb
+
+gold
+D4AF37
+
+icon
+55x55 pt
+#414a51
+
+cta-bg
+1500x634
+
+header-bg
+1500x719
+
